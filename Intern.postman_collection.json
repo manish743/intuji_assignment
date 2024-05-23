@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "1eaf127b-08fa-4b88-8ddd-2fc0132199df",
+		"name": "Intern",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30300433"
+	},
+	"item": [
+		{
+			"name": "blog",
+			"item": [
+				{
+					"name": "createBlog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"8 Useful JavaScript Coding Techniques That You Should Use\",\r\n    \"description\" : \"I wish I'd known them earlier\",\r\n    \"category\" : \"Tech\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/blogs",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"blogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "readAllBlogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/blogs",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"blogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "readSpecificBlog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/blogs/664ee19b34c42df0713c77b3",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"blogs",
+								"664ee19b34c42df0713c77b3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateBlog",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/blogs/664ee19b34c42df0713c77b3",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"blogs",
+								"664ee19b34c42df0713c77b3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
